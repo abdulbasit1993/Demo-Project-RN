@@ -15,6 +15,12 @@ const HomeScreen = ({navigation}) => {
         onPress={() => navigation.navigate('CounterExample')}>
         <Text style={styles.btnTextStyle}>Counter Example Screen</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.btnStyle}
+        onPress={() => navigation.navigate('DigitalClock')}>
+        <Text style={styles.btnTextStyle}>Digital Clock Screen</Text>
+      </TouchableOpacity>
     </View>
   );
 };

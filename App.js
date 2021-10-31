@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from './src/Screens/HomeScreen';
 import CameraFlashTest from './src/Screens/CameraFlashTest';
 import CounterExample from './src/Screens/CounterExample';
+import DigitalClock from './src/Screens/DigitalClock';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,11 @@ const App = () => {
           name="CounterExample"
           component={CounterExample}
           options={{headerTitle: 'Counter Example'}}
+        />
+        <Stack.Screen
+          name="DigitalClock"
+          component={DigitalClock}
+          options={{headerTitle: 'Digital Clock'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
