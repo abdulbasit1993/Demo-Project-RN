@@ -9,6 +9,12 @@ const HomeScreen = ({navigation}) => {
         onPress={() => navigation.navigate('CameraFlashTest')}>
         <Text style={styles.btnTextStyle}>Flashlight Test Screen</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.btnStyle}
+        onPress={() => navigation.navigate('CounterExample')}>
+        <Text style={styles.btnTextStyle}>Counter Example Screen</Text>
+      </TouchableOpacity>
     </View>
   );
 };

@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import HomeScreen from './src/Screens/HomeScreen';
 import CameraFlashTest from './src/Screens/CameraFlashTest';
+import CounterExample from './src/Screens/CounterExample';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,11 @@ const App = () => {
           name="CameraFlashTest"
           component={CameraFlashTest}
           options={{headerTitle: 'Flashlight Test'}}
+        />
+        <Stack.Screen
+          name="CounterExample"
+          component={CounterExample}
+          options={{headerTitle: 'Counter Example'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
